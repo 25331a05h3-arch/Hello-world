@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[50] = "Hello";
+    char str2[50] = "World";
+    char str3[50];
+    int len;
+
+   
+    len = strlen(str1);
+    printf("1. Length of str1 ('%s'): %d\n", str1, len);
+
+    strcpy(str3, str1);
+    printf("2. Copied str1 into str3: %s\n", str3);
+
+    
+    strcat(str1, " ");
+    strcat(str1, str2); 
+    printf("3. Concatenated str1: %s\n", str1);
+
+    l
+    if (strcmp(str3, "Hello") == 0) {
+        printf("4. Comparison: str3 is equal to 'Hello'\n");
+    } else {
+        printf("4. Comparison: Strings are not equal\n");
+    }
+
+    return 0;
+}
