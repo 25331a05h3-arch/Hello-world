@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+     int arr[] = {10, 20, 30, 40, 50};
+    int *ptr = arr; // Points to arr[0] (value 10)
+
+    printf("Initial Pointer: Value = %d, Address = %p\n", *ptr, (void*)ptr);
+
+    
+    ptr++;
+    printf("After Increment (ptr++): Value = %d, Address = %p\n", *ptr, (void*)ptr);
+
+      ptr = ptr + 2; 
+    printf("After Adding 2 (ptr + 2): Value = %d, Address = %p\n", *ptr, (void*)ptr);
+
+  
+    printf("After Decrement (ptr--): Value = %d, Address = %p\n", *ptr, (void*)ptr);
+
+        ptr = ptr - 2;
+    printf("After Subtracting 2 (ptr - 2): Value = %d, Address = %p\n", *ptr, (void*)ptr);
+    int *ptr_end = &arr[4];
+    int *ptr_start = &arr[0];
+    int length = ptr_end - ptr_start;
+    printf("\nDistance between ptr_end and ptr_start: %d elements\n", length);
+
+    return 0;
+}
+
